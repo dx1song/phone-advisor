@@ -1,0 +1,14 @@
+# 数码产品「需求 → 推荐」顾问 · 依赖清单
+# 安装：pip install -r requirements.txt
+#
+# 说明：静态网页（数码产品推荐顾问_网页.html）零依赖，双击即可打开；
+# 以下依赖仅用于「后端功能」（scoring.py / rag.py / agent.py 命令行调用）。
+
+# ---- RAG 检索（rag.py）----
+numpy>=1.24
+requests>=2.28
+
+# ---- LLM 双工具编排（agent.py）----
+langchain>=1.0
+langchain-openai>=0.1
+langgraph>=0.2
